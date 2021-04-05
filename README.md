@@ -11,9 +11,7 @@ Using machine learning and neural networks, created a binary classifier that is 
 Task performed include:
 
 1. Preprocessing data for a Neural Network Model
-
 2. Compiling, Training, and Evaluating the Model
-
 3. Optimizing the Model
 
 
@@ -25,13 +23,21 @@ For this model, the target variable is the IS_SUCCESSFUL column data as this var
 The variables considered features for this model are:  
 
 -- APPLICATION_TYPE—Alphabet Soup application type
+
 -- AFFILIATION—Affiliated sector of industry
+
 -- CLASSIFICATION—Government organization classification
+
 -- USE_CASE—Use case for funding
+
 -- ORGANIZATION—Organization type
+
 -- STATUS—Active status
+
 -- INCOME_AMT—Income classification
+
 -- SPECIAL_CONSIDERATIONS—Special consideration for application
+
 -- ASK_AMT—Funding amount requested
 
 Two variables in the dataset, EIN and NAME, were neither targets nor features, because they were identification pieces of data  that would not be useful in or contribute to this model's prediction capability, were removed from the input data: 
@@ -47,9 +53,9 @@ The model's target predictive accuracy of higher than 75% was not achieved and o
 #### Model Evaluation
 ![](images/model1_evaluation.png)
 
-In an attempt to increase the model performance, the following steps were taken.  But in all cases, an accuracy of higher than 75% was not achieved:
+In an attempt to increase the model's predictive accuracy, the following attempts were made.  But in all cases, an accuracy of higher than 75% was not achieved:
 
-1.  Addition of another hidden layer
+#### 1.  Addition of another hidden layer
 
 #### Model Optimization Attempt #1: Layers, Neurons, and Activation Functions
 ![](images/model2_layers.png)
@@ -57,7 +63,7 @@ In an attempt to increase the model performance, the following steps were taken.
 #### Model Optimization Attempt #1:  Evaluation
 ![](images/model2_evaluation.png)
 
-2.  Removal of the added third hidden layer and increasing the number of neurons in the remaining two hidden layers
+#### 2.  Removal of the added third hidden layer and increasing the number of neurons in the remaining two hidden layers
 
 #### Model Optimization Attempt #2: Layers, Neurons, and Activation Functions
 ![](images/model3_layers.png)
@@ -65,7 +71,7 @@ In an attempt to increase the model performance, the following steps were taken.
 #### Model Optimization Attempt #2:  Evaluation
 ![](images/model3_evaluation.png)
 
-3.  Changing the activation function in the first layer
+#### 3.  Changing the activation function in the first layer
 
 #### Model Optimization Attempt #3: Layers, Neurons, and Activation Functions
 ![](images/model4_layers.png)
